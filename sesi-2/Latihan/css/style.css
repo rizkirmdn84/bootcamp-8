@@ -1,0 +1,23 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --font-family: 'Arial', sans-serif;
+}
+h1{
+    color: var(--primary-color);
+    font-family: var(--font-family);
+}
+.info{
+    color: rgb(119, 128, 0);
+    font-family: var(--font-family);
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    background-color: var(--secondary-color);
+    padding: 10px;
+    z-index: 1000;
+    border: 2px solid black;
+    text-align: center;
+}
