@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Biodata - Portofolio</title>
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <style>
+        .hover-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2) !important;
+            transition: all 0.3s ease;
+        }
+
+        .profile-image {
+            border-radius: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .profile-image:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 40px rgba(13, 110, 253, 0.4) !important;
+        }
+
+        /* Responsive Modal */
+        @media (max-width: 576px) {
+            .modal-dialog {
+                margin: 10px !important;
+            }
+
+            .modal-body {
+                padding: 1rem !important;
+            }
+
+            .modal-body p {
+                font-size: 0.9rem !important;
+            }
+
+            .card-body {
+                padding: 0.75rem !important;
+            }
+
+            .card-body h6 {
+                font-size: 0.9rem !important;
+                margin-bottom: 0.5rem !important;
+            }
+
+            .card-body p {
+                font-size: 0.85rem !important;
+            }
+
+            .modal-title {
+                font-size: 1.1rem !important;
+            }
+
+            .btn-sm {
+                padding: 0.4rem 0.8rem;
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary bg-gradient sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#header">PROFILE SAYA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#header">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#biodata">Biodata</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portofolio">Portofolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-outline-light btn-sm" data-bs-toggle="modal"
+                            data-bs-target="#contactModal" style="margin-top:5px;">
+                            Kontak Cepat
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-5">
+        <section id="header" class="mb-5 bg-light bg-gradient py-5 rounded">
+            <div class="row align-items-center g-4 justify-content-center">
+                <div class="col-lg-5 col-md-8 text-center mb-4">
+                    <img src="foto/saya.png" alt="Foto Profil"
+                        class="profile-image img-fluid shadow-lg border border-2 border-primary"
+                        style="max-width: 290px ;margin-top:20px; display: inline-block;">
+                </div>
+                <div class="col-lg-7">
+                    <div class="card border-0 shadow-lg p-4 bg-white">
+                        <div class="card-body text-center">
+                            <h1 class="display-6 fw-bold text-primary">Selamat Datang di Profil Saya</h1>
+                            <p class="lead">Information Systems graduate with experience in IT engineering and web
+                                development, passionate about building efficient systems and continuously improving
+                                technical skills.</p>
+                            <p class="text-muted">Lihat portofolio dan biodata saya di bawah untuk mengenal lebih jauh.
+                            </p>
+                            <a href="#portofolio" class="btn btn-primary btn-lg mt-3 shadow">Lihat Portofolio</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="biodata" class="mb-5">
+            <div class="text-center mb-4">
+                <h2 class="fw-bold text-primary">Biodata Pribadi</h2>
+                <p class="text-muted">Informasi singkat tentang pengalaman dan data diri saya.</p>
+            </div>
+            <div class="row g-3">
+                <div class="col-md-6 col-xl-4">
+                    <div class="card h-100 shadow-sm hover-card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-primary">Nama Lengkap</h5>
+                            <p class="card-text">Rizki Ramadhan</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="card h-100 shadow-sm hover-card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-primary">Pendidikan</h5>
+                            <p class="card-text">S1 Sistem Informasi</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="card h-100 shadow-sm hover-card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-primary">Pekerjaan</h5>
+                            <p class="card-text">Web Developer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="card h-100 shadow-sm hover-card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-primary">Kontak</h5>
+                            <p class="card-text mb-0">rizkirmdn84@gmail.com</p>
+                            <p class="card-text">0813-8975-4447</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="card h-100 shadow-sm hover-card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-primary">Hobi</h5>
+                            <p class="card-text">Membaca, Koding, Traveling</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="card h-100 shadow-sm hover-card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-primary">Alamat</h5>
+                            <p class="card-text">Jl. Murai IV Blok 12 No 5</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portofolio" class="mb-5">
+            <div class="text-center mb-4">
+                <h2 class="fw-bold text-primary">Portofolio Saya</h2>
+                <p class="text-muted">Beberapa karya yang pernah saya kerjakan untuk klien dan proyek pribadi.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-xl-4">
+                    <div class="card h-100 shadow-sm hover-card text-center">
+                        <img src="foto/1.png" class="card-img-top" alt="Project 1"
+                            style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">E-Commerce Web</h5>
+                            <p class="card-text">Membangun platform toko online responsif untuk UMKM lokal.</p>
+                            <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#project1Modal">Detail</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="card h-100 shadow-sm hover-card text-center">
+                        <img src="foto/2.png" class="card-img-top" alt="Project 2"
+                            style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">Mobile App Design</h5>
+                            <p class="card-text">Desain antarmuka aplikasi manajemen keuangan pribadi.</p>
+                            <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#project2Modal">Detail</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="card h-100 shadow-sm hover-card text-center">
+                        <img src="foto/3.png" class="card-img-top" alt="Project 3"
+                            style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">Company Profile</h5>
+                            <p class="card-text">Website profil perusahaan-perusahaan untuk industri manufaktur.</p>
+                            <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#project3Modal">Detail</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-primary bg-gradient text-white py-4">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2026 Profil Biodata Saya. Dibuat dengan Bootstrap dan ❤️.</p>
+        </div>
+    </footer>
+
+    <!-- Modal Kontak Cepat -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+            <div class="modal-content border-0 shadow-lg">
+                <div class="modal-header bg-primary bg-gradient text-white border-0 py-3">
+                    <h5 class="modal-title fw-bold" id="contactModalLabel">📞 Hubungi Saya</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-3">
+                    <p class="text-center text-muted mb-3 fs-6">Gunakan informasi di bawah untuk menghubungi saya:</p>
+                    <div class="row g-2">
+                        <div class="col-12">
+                            <div class="card border-primary border-2 shadow-sm bg-light">
+                                <div class="card-body text-center p-2">
+                                    <h6 class="text-primary fw-bold mb-1">✉️ Email</h6>
+                                    <p class="mb-0 small"><a href="mailto:rizkirmdn84@gmail.com"
+                                            class="text-decoration-none">rizkirmdn84@gmail.com</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="card border-success border-2 shadow-sm bg-light">
+                                <div class="card-body text-center p-2">
+                                    <h6 class="text-success fw-bold mb-1">📱 Telepon</h6>
+                                    <p class="mb-0 small"><a href="tel:+6281389754447"
+                                            class="text-decoration-none">0813-8975-4447</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer border-0 bg-light py-2">
+                    <button type="button" class="btn btn-primary btn-sm" data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="project1Modal" tabindex="-1" aria-labelledby="project1ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="project1ModalLabel">E-Commerce Web</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Membangun platform toko online responsif untuk UMKM lokal dengan fitur katalog produk,
+                        keranjang belanja, dan sistem pembayaran sederhana.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="project2Modal" tabindex="-1" aria-labelledby="project2ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="project2ModalLabel">Mobile App Design</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Desain antarmuka yang bersih dan mudah digunakan untuk aplikasi manajemen keuangan pribadi,
+                        dengan fokus pada kemudahan navigasi dan visual yang modern.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="project3Modal" tabindex="-1" aria-labelledby="project3ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="project3ModalLabel">Company Profile</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Website profil perusahaan yang menampilkan visi, layanan, dan portofolio klien untuk meningkatkan
+                        citra profesional dan kepercayaan pengunjung.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
