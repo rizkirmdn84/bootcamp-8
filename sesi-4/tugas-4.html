@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Biodata - Portofolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-3">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="img/logo.webp" alt="logo" width="160"
+                    class="img-fluid d-inline-block align-text-top"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-2">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#service">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portofolio">Portofolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-orange contact-btn" href="#" data-bs-toggle="modal"
+                            data-bs-target="#contactModal">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="home">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h6 class="fw-600" style="font-size: 24px;">Hi, i'm</h6>
+                    <h6 class="fw-600" style="font-size: 32px; color: #FD6F00">Rizki Ramadhan</h6>
+                    <h1>Web Developer</h1>
+                    <p>Ini adalah bagian dari profil biodata saya.</p>
+                    <a href="#!" class="btn btn-orange" data-bs-toggle="modal" data-bs-target="#hireMeModal">Hire
+                        Me</a>
+                </div>
+                <div class="col-12 col-lg-6 mt-5 mt-md-0">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="hero-photo-frame">
+                            <img src="img/foto1.webp" alt="Home Image" class="img-fluid hero-photo">
+                        </div>
+                    </div>
+                    <div class="hero-socials d-flex justify-content-center gap-3 mt-4">
+                        <a href="#" class="social-pill" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.99 3.66 9.12 8.44 9.88v-6.99H7.9v-2.89h2.54V9.7c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.78l-.44 2.89h-2.34V21.9C18.34 21.12 22 16.99 22 12Z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-pill" aria-label="Twitter">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M22.46 6c-.77.35-1.6.58-2.46.69a4.29 4.29 0 0 0 1.88-2.37 8.59 8.59 0 0 1-2.72 1.04 4.28 4.28 0 0 0-7.3 3.9A12.14 12.14 0 0 1 3.16 4.8a4.28 4.28 0 0 0 1.32 5.72 4.25 4.25 0 0 1-1.94-.53v.05a4.28 4.28 0 0 0 3.43 4.19 4.3 4.3 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98A8.6 8.6 0 0 1 2 19.54a12.12 12.12 0 0 0 6.56 1.92c7.87 0 12.17-6.52 12.17-12.17 0-.19-.01-.38-.02-.57A8.7 8.7 0 0 0 22.46 6Z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-pill" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M7.75 2h8.5C19.55 2 22 4.45 22 7.75v8.5C22 19.55 19.55 22 16.25 22h-8.5C4.45 22 2 19.55 2 16.25v-8.5C2 4.45 4.45 2 7.75 2Zm0 2C5.68 4 4 5.68 4 7.75v8.5C4 18.32 5.68 20 7.75 20h8.5c2.07 0 3.75-1.68 3.75-3.75v-8.5C20 5.68 18.32 4 16.25 4h-8.5ZM12 7.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9Zm0 2a2.5 2.5 0 1 0 .001 5.001A2.5 2.5 0 0 0 12 9.5Zm4.75-2.38a1.12 1.12 0 1 1 0 2.25 1.12 1.12 0 0 1 0-2.25Z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-pill" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M20.45 20.45h-3.55V14.9c0-1.33-.03-3.05-1.86-3.05-1.86 0-2.15 1.45-2.15 2.95v5.65H9.38V9h3.41v1.56h.05c.48-.9 1.66-1.86 3.42-1.86 3.66 0 4.34 2.41 4.34 5.56v6.68ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.11 20.45H3.58V9h3.53v11.45ZM22 4.5A1.5 1.5 0 1 1 19.5 3 1.5 1.5 0 0 1 22 4.5Z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-5 mb-5 mb-md-0">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="about-photo-frame">
+                            <img src="img/foto2.webp" alt="About Image" class="img-fluid about-photo">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <h2 class="section-title">About Me</h2>
+                    <p>Information Systems graduate with experience in IT engineering and web development, passionate
+                        about building efficient systems and continuously improving technical skills.</p>
+                    <div class="mt-4">
+                        <h6>UI/UX Design</h6>
+                        <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 75%">75%</div>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <h6>Web Designe</h6>
+                        <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 75%">75%</div>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <h6>App Design</h6>
+                        <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 75%">75%</div>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <h6>Graphic Design</h6>
+                        <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 75%">75%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section id="service">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 text-center mb-5">
+                    <div class="service-content m-auto">
+                        <h2 class="section-title">My Services</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut iusto consectetur ab a obcaecati
+                            praesentium quas quibusdam alias accusantium voluptas labore magnam, laudantium eum. Fugiat
+                            nemo
+                            numquam labore aperiam possimus.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <div class="service-card">
+                        <img src="img/logo1.webp" class="img-fluid" alt="icon">
+                        <h5 class="mt-4">UI/UX</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim odio non corporis aliquam
+                            officiis nobis animi</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <div class="service-card">
+                        <img src="img/logo2.webp" class="img-fluid" alt="icon">
+                        <h5 class="mt-4">Web Design</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim odio non corporis aliquam
+                            officiis nobis animi</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <div class="service-card">
+                        <img src="img/logo3.webp" class="img-fluid" alt="icon" style="height: 82px;">
+                        <h5 class="mt-4">App Design</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim odio non corporis aliquam
+                            officiis nobis animi</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <div class="service-card">
+                        <img src="img/logo4.webp" class="img-fluid" alt="icon">
+                        <h5 class="mt-4">Graphic Design</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim odio non corporis aliquam
+                            officiis nobis animi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portofolio">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 text-center mb-5">
+                    <div class="service-content m-auto">
+                        <h2 class="section-title">Portofolio</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut iusto consectetur ab a
+                            obcaecati
+                            praesentium quas quibusdam alias accusantium voluptas labore magnam, laudantium eum.
+                            Fugiat
+                            nemo
+                            numquam labore aperiam possimus.</p>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="portofolio-card mb-4 mb-md-0">
+                            <img src="img/project1.webp" class="img-fluid rounded mb-2" alt="portofolio">
+                            <h5>Web Design</h5>
+                            <h4>AirCalling Landing Page Design</h4>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="portofolio-card mb-4 mb-md-0">
+                            <img src="img/project2.webp" class="img-fluid rounded mb-2" alt="portofolio">
+                            <h5>Web Design</h5>
+                            <h4>Business Landing Page Design</h4>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="portofolio-card mb-4 mb-md-0">
+                            <img src="img/project3.webp" class="img-fluid rounded mb-2" alt="portofolio">
+                            <h5>Web Design</h5>
+                            <h4>Ecom Web Page Design</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="cta" class="cta-section">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <h2 class="section-title">Lets Design Together</h2>
+                    <p class="cta-text">Bersama saya, wujudkan website dan proyek digital dengan desain yang elegan dan
+                        fungsional.</p>
+                    <form class="cta-form row g-2 justify-content-center mt-4">
+                        <div class="col-sm-8">
+                            <input type="email" class="form-control" placeholder="Enter Your Email" aria-label="Email">
+                        </div>
+                        <div class="col-sm-4 d-grid">
+                            <button type="submit" class="btn btn-orange">Contact Me</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="modal fade" id="hireMeModal" tabindex="-1" aria-labelledby="hireMeModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="hireMeModalLabel">Hire Me</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="contactName" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="contactName" placeholder="Your name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="contactEmail" placeholder="you@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactMessage" class="form-label">Message</label>
+                            <textarea class="form-control" id="contactMessage" rows="4"
+                                placeholder="Write your message..."></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-orange">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="contactModalLabel">Contact Me</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="mb-3 text-muted">Kirim pesan langsung untuk bertanya tentang layanan, proyek, atau kerja
+                        sama.</p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="modalContactName" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="modalContactName" placeholder="Your name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="modalContactEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="modalContactEmail"
+                                placeholder="you@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="modalContactMessage" class="form-label">Message</label>
+                            <textarea class="form-control" id="modalContactMessage" rows="4"
+                                placeholder="Type your message..."></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-orange">Send Message</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="site-footer">
+        <div class="container text-center">
+            <a class="footer-logo d-inline-block mb-4" href="#"><img src="img/logo.webp" alt="logo"
+                    class="img-fluid"></a>
+            <ul class="footer-nav list-unstyled d-flex flex-wrap justify-content-center gap-3 mb-4">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#portfolio">Portofolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="footer-social d-flex justify-content-center gap-3">
+                <a href="#" class="social-pill" aria-label="Facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.99 3.66 9.12 8.44 9.88v-6.99H7.9v-2.89h2.54V9.7c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.78l-.44 2.89h-2.34V21.9C18.34 21.12 22 16.99 22 12Z" />
+                    </svg>
+                </a>
+                <a href="#" class="social-pill" aria-label="Twitter">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M22.46 6c-.77.35-1.6.58-2.46.69a4.29 4.29 0 0 0 1.88-2.37 8.59 8.59 0 0 1-2.72 1.04 4.28 4.28 0 0 0-7.3 3.9A12.14 12.14 0 0 1 3.16 4.8a4.28 4.28 0 0 0 1.32 5.72 4.25 4.25 0 0 1-1.94-.53v.05a4.28 4.28 0 0 0 3.43 4.19 4.3 4.3 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98A8.6 8.6 0 0 1 2 19.54a12.12 12.12 0 0 0 6.56 1.92c7.87 0 12.17-6.52 12.17-12.17 0-.19-.01-.38-.02-.57A8.7 8.7 0 0 0 22.46 6Z" />
+                    </svg>
+                </a>
+                <a href="#" class="social-pill" aria-label="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M7.75 2h8.5C19.55 2 22 4.45 22 7.75v8.5C22 19.55 19.55 22 16.25 22h-8.5C4.45 22 2 19.55 2 16.25v-8.5C2 4.45 4.45 2 7.75 2Zm0 2C5.68 4 4 5.68 4 7.75v8.5C4 18.32 5.68 20 7.75 20h8.5c2.07 0 3.75-1.68 3.75-3.75v-8.5C20 5.68 18.32 4 16.25 4h-8.5ZM12 7.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9Zm0 2a2.5 2.5 0 1 0 .001 5.001A2.5 2.5 0 0 0 12 9.5Zm4.75-2.38a1.12 1.12 0 1 1 0 2.25 1.12 1.12 0 0 1 0-2.25Z" />
+                    </svg>
+                </a>
+                <a href="#" class="social-pill" aria-label="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M20.45 20.45h-3.55V14.9c0-1.33-.03-3.05-1.86-3.05-1.86 0-2.15 1.45-2.15 2.95v5.65H9.38V9h3.41v1.56h.05c.48-.9 1.66-1.86 3.42-1.86 3.66 0 4.34 2.41 4.34 5.56v6.68ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.11 20.45H3.58V9h3.53v11.45ZM22 4.5A1.5 1.5 0 1 1 19.5 3 1.5 1.5 0 0 1 22 4.5Z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        </div>
+        <div class="footer-bottom text-center py-4 mt-4">
+            <div class="container">
+                <p class="mb-0">&copy; 2026 <span class="brand-highlight">RizkiRamadhan</span>. All Rights Reserved,
+                    inc.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
